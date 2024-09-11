@@ -1,0 +1,14 @@
+.container {
+    width: 100%;
+}
+
+.container img {
+    width: 500px;
+    max-width: max-content;
+    border: 10px ridge black;
+}
+
+.container h2 {
+    text-decoration: underline;
+    font-size: 2em;
+}

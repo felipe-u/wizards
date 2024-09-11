@@ -1,0 +1,15 @@
+[
+  {
+    "id": "001",
+    "name": "Gandalf",
+    "imageUrl": "https://sites.nd.edu/manuscript-studies/files/2020/12/gandalf-icon-860x1024.jpg",
+    "age": "55000"
+  },
+  {
+    "id": "002",
+    "name": "Dumbledore",
+    "imageUrl": "https://sm.ign.com/t/ign_latam/screenshot/default/albus_f7cu.1280.jpg",
+    "age": "150"
+  }
+
+]

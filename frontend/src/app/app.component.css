@@ -1,0 +1,35 @@
+.menu_ul {
+    display: flex;
+    width: 450px;
+    height: 50px;
+    margin: auto;
+    border: 1px solid white;
+    border-radius: 5px;
+    list-style: none;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.871);
+}
+
+.menu_ul a {
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.menu_ul a:hover {
+    background-color: rgba(255, 255, 255, 0.336);;
+}
+
+.menu_ul li {
+    margin: 10px;
+}
+
+main {
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+}

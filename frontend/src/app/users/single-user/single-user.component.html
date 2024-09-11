@@ -1,0 +1,23 @@
+<div class="container">
+    @if(user() === undefined) {
+        <div class="loader-container">
+            <span class="loader"></span>
+            <p>Loading user...</p>
+        </div>
+    } @else {
+    <div class="user-container">
+        <h1>{{ user().name }}</h1>
+        <br><br>
+        <img [src]="user().imageUrl" [alt]="user().name">
+        <h3>Age: {{ user().age }} years old</h3>
+        <hr><br><br>
+        <div class="tourn-btn-container">
+            <button class="btn" (click)="joinTournament()">Join the Tournament</button>
+        </div>
+        <div class="btn-container">
+            <button class="btn" (click)="onEdit()">Edit</button>
+            <button class="btn danger" (click)="onDelete()">Delete</button>
+        </div>
+    </div>
+    }
+</div>

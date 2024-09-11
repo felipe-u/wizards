@@ -1,0 +1,74 @@
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
+  background-image: url("/assets/img/background.jpg");
+  background-attachment: fixed;
+  color: white;
+}
+
+.btn {
+  width: 150px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.871);
+  color: white;
+  border: 1px solid gray;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.336);
+  cursor: pointer;
+}
+
+.btn:disabled,
+.btn[disabled] {
+  background-color: rgba(255, 255, 255, 0.697);
+  cursor: not-allowed;
+}
+
+.danger {
+  background-color: rgba(254, 70, 70, 0.871);
+}
+
+.danger:hover {
+  background-color: rgba(251, 152, 152, 0.871);
+  cursor: pointer;
+}
+
+/* Loader  */
+
+.loader-container {
+  width: 100%;
+}
+
+.loader {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 4px solid #FFF;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  border-bottom: 4px solid #FF3D00;
+  border-left: 4px solid transparent;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 

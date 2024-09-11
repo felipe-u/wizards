@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+}
+
+.container form {
+  border: 1px solid grey;
+  border-radius: 5px;
+  width: 600px;
+  margin: auto;
+  padding-bottom: 50px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.input-container {
+  display: block;
+  margin: 30px auto;
+}
+
+.input-container input {
+  text-align: center;
+  margin-top: 15px;
+  width: 300px;
+  font-size: 1.3em;
+}
+
+.input-container label {
+  font-size: 1.4em;
+}
+
+.img-container {
+  margin: 55px auto;
+}
+
+.img-container img {
+  width: 400px;
+  border: 5px ridge grey;
+}
+
+.btn-container button {
+  margin: auto 10px;
+}

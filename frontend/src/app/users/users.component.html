@@ -1,0 +1,11 @@
+<div class="container">
+    <button class="btn" (click)="visitCreateUserPage()">Join us</button>
+    <br><br><br>
+    @if (users().length > 0) {
+        @for (user of users(); track user.id) {
+            <app-user [user]="user"/>
+        }
+    } @else {
+        <h1>No users now...try again later.</h1>
+    }
+</div>

@@ -1,0 +1,26 @@
+<div class="container">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="input-container">
+            <label for="name">Wizard name</label><br>
+            <input type="text" name="name" id="name" formControlName="name">
+        </div>
+        <div class="input-container">
+            <label for="age">Age</label><br>
+            <input type="number" name="age" id="age" formControlName="age">
+        </div>
+        <div class="input-container">
+            <label for="imageUrl">Show us my friend: Insert an image URL</label><br>
+            <input type="text" name="imageUrl" id="imageUrl" formControlName="imageUrl">
+        </div>
+        @if (form.value.imageUrl !== '') {
+        <div class="img-container">
+            <img [src]="form.value.imageUrl" alt="There was an error loading the image.">
+            <p>Looking good</p>
+        </div>
+        }
+        <div class="btn-container">
+            <button type="submit" class="btn" [disabled]="!form.valid" >Done</button>
+            <button type="button" class="btn danger" (click)="goBack()">Cancel</button>
+        </div>
+    </form>
+</div>

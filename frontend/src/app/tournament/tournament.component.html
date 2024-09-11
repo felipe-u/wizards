@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="desc-container">
+        <h1>War Season</h1>
+        <div class="img-container">
+            <div class="background-gif"></div>
+            <img (click)="onShow()" class="cup" src="assets/img/tournament-cup.png" alt="Tournament Cup">
+        </div>
+        <h3>These are the brave wizards who will join the tournament</h3>
+
+        <table>
+            <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Rank</th>
+                <th></th>
+            </tr>
+            @if ( users().length > 0) {
+            @for (user of users(); track user) {
+            <tr>
+                <td><img [src]="user.imageUrl" [alt]="user.name">
+                </td>
+                <td>{{ user.name }}</td>
+                <td>Wizard Rank</td>
+                <td><i class="material-icons trash" (click)="onQuitTournament(user._id)">delete</i></td>
+            </tr>
+            }
+            } @else {
+            <tr>
+                <td colspan="4">No wizards yet</td>
+            </tr>
+            }
+        </table>
+    </div>
+</div>
